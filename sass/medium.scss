@@ -257,6 +257,11 @@ div.heading{
   }
 }
 
+div#container.other_projects {
+  padding-bottom: 60px;
+  margin-bottom: -60px;
+}
+
 div#welcome, div#featured_heading {
   h1 {
     font-size: 2.5em;
@@ -330,4 +335,12 @@ ul.subnav {
 
 ul.subnav-small {
   display: none;
+}
+
+div#button-row {
+    margin-top: 1em;
+    div.button#more_projects {
+      margin: auto;
+      width: 290px;
+    }
 }

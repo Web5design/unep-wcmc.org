@@ -128,13 +128,16 @@ div.banner {
 
 div#container.other_projects {
   padding-bottom: 6em;
-  section h2 {
-    margin: 0.75em 0;
-  }
-  .section-group {
-    width: 70%;
-    margin: auto;
-  }
+}
+
+div#container.other_projects h2.large_subheading#featured_projects {
+  width: 70%;
+  margin: auto;
+}
+
+div#container.other_projects div.section-group {
+  width: 70%;
+  margin: auto;
 }
 
 div.heading{
@@ -184,23 +187,13 @@ div.heading{
   }
 }
 
-div#welcome, div#featured_heading {
-  margin: auto;
-  margin-bottom: 60px;
-  width: 90%;
-}
-
 div#featured_heading {
   margin-top: 60px;
 }
 
 div#footer_container {
-	padding: 2% 0;
+	padding: 30px 0;
 	margin-top: 60px;
-}
-
-div#footer_container.featured {
-	margin-top: 0;
 }
 
 ul.footer{	
