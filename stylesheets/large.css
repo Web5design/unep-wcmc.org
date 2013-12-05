@@ -332,3 +332,53 @@ section.group.staff#vacancy-team:nth-child(2n) {
 section.group.staff#vacancy-team:nth-child(2n+3) {
   clear: left;
 }
+
+/* line 283, ../sass/large.scss */
+div.column-1-3#job_related_small {
+  display: none;
+}
+
+/* line 287, ../sass/large.scss */
+#container div.column-1-3#job_related {
+  display: block;
+}
+/* line 289, ../sass/large.scss */
+#container div.column-1-3#job_related div.button {
+  margin-bottom: 40px;
+}
+
+/* line 294, ../sass/large.scss */
+div.column-1-3#save-link {
+  display: block;
+}
+
+/* line 298, ../sass/large.scss */
+div.column-1-3#save-link-small {
+  display: none;
+}
+
+/* line 302, ../sass/large.scss */
+section#actions-column {
+  display: block;
+}
+
+/* line 306, ../sass/large.scss */
+section.column-2-3#actions-column-small {
+  display: none;
+}
+
+/* line 310, ../sass/large.scss */
+section#actions-column {
+  display: block;
+}
+
+/* line 314, ../sass/large.scss */
+section.column-2-3#actions-column-small {
+  display: none;
+}
+
+/* line 318, ../sass/large.scss */
+#container div.column-2-3.left#job_application, div.column-2-3.left#job_description {
+  float: left;
+  width: 63%;
+}

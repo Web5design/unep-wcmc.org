@@ -156,7 +156,7 @@ h1, h2, h3, h5 {
 /* line 131, ../sass/medium.scss */
 h1 {
   font-size: 2.25em;
-  line-height: 1.5em;
+  line-height: 1em;
   margin: 0 0 0.75em 0;
   color: #5e5a5c;
 }
@@ -430,11 +430,31 @@ div#button-row div.button#more_projects {
 }
 
 /* line 361, ../sass/medium.scss */
-section#actions-column {
-  display: block;
+div.column-1-3#job_related_small section.group.staff {
+  width: 22%;
+  margin-right: 4%;
+}
+/* line 364, ../sass/medium.scss */
+div.column-1-3#job_related_small section.group.staff:nth-child(4n) {
+  margin-right: 0;
+}
+/* line 367, ../sass/medium.scss */
+div.column-1-3#job_related_small section.group.staff:nth-child(4n+4) {
+  clear: none;
 }
 
-/* line 365, ../sass/medium.scss */
-section.column-2-3#actions-column-small {
-  display: none;
+/* line 372, ../sass/medium.scss */
+div.column-1-3.right#save-link-small i {
+  right: -618px;
+}
+
+/* line 376, ../sass/medium.scss */
+div.column-2-3.left#job_application div.button {
+  width: 250px;
+}
+
+/* line 380, ../sass/medium.scss */
+#container div.column-2-3.left#job_application h1 span {
+  display: inline;
+  font-size: 0.45em;
 }
