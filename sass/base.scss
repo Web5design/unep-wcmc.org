@@ -88,6 +88,20 @@ h3{
     color: #5175a3;
     border-top: 1px solid $grey;
 	}
+	&#position {
+	  font-size: 1em;
+    font-family: "museo-sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #bbb;
+    margin-bottom: 5px;
+    span#separator {
+      display: inline-block;
+      padding: 0 5px;
+    }
+    span#department {
+      text-transform: uppercase;
+    }
+	}
 }
 
 h4{
@@ -383,23 +397,10 @@ div#button-row {
           color: $grey_text;
         }
       }
-      span.position {
-        font-size: 1em;
-        text-transform: uppercase;
-        font-family: "museo-sans", Helvetica, Arial, sans-serif;
-        font-weight: 300;
-        color: $grey_text;
+      p#salary {
+        margin-bottom: 30px;
       }
-      span.programme_name {
-        display: inline-block;
-        margin-bottom: 2em;
-      }
-      span.programme_bar {
-        color: #59B200; 
-        font-weight: 900;
-        display: inline-block;
-        padding: 2%;
-      }
+
     }
     ul.partners_logos {
       overflow: hidden;
@@ -1305,11 +1306,24 @@ div.column-1-3#job_related {
   display: none;
 }
 
-div.column-1-3#job_related_small {
-  clear: both;
+div#container.job-related {
+  background: $grey;
   width: 100%;
-  margin-top: -60px;
-  margin-bottom: 60px;
+  margin-bottom: -60px;
+}
+
+#container.job-related div.column-1-3#job_related_small {
+  clear: both;
+  width: 90%;
+  margin: 0 5%;
+  padding-bottom: 60px;
+  h1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
 }
 
 div.column-2-3.left#job_description {
