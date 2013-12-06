@@ -104,29 +104,40 @@ div.project-team {
 
 div#nav{
 	width:100%;
-  .nav-container {
-    overflow: hidden;
-    width: 70%;
+  overflow: hidden;
     a#home_link {
-  		padding: 0;
-  		float: left;
-  		padding-left: 0;
-  		width: 35%;
-  		img {
-  			max-width: 100%;
-  		}
-  	}
-  	ul{
-  		width: 65%;
-  		margin: auto;
-  		float: right;
-  	  overflow: hidden;
-  		li{
-  			padding: 3.25% 0 0 2%;
-  			float: right;
-  		}
-  	}
-  }
+		float: left;
+		width: 40%;
+		padding: 20px 0 20px 15%;
+		img {
+			max-width: 100%;
+		}
+	}
+	ul#large-menu{
+	  width: 60%;
+		padding: 20px 15% 20px 0;
+		margin: 0;
+	  overflow: hidden;
+		li{
+		  padding: 0 0 0 2%;
+			float: right;
+			line-height: 37px;
+		}
+		&#button-menu {
+      display: none;
+      clear: both;
+      li {
+        padding: 0 0 3px 0;
+        margin: 0;
+        clear: both;
+        text-align: right;
+        font-size: 0.85em;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+	}
 }
 
 div.banner {
@@ -286,6 +297,7 @@ div.column-1-3#job_related_small {
 
 #container div.column-1-3#job_related {
   display: block;
+  margin-bottom: 60px;
   div.button {
     margin-bottom: 40px;
   }
