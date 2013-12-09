@@ -202,7 +202,7 @@ h5 {
 /* line 125, ../sass/base.scss */
 address, p {
   font-size: 1em;
-  margin-bottom: 0.75em;
+  margin-bottom: 10px;
   line-height: 1.5em;
   font-weight: 300;
   color: #5e5a5c;
