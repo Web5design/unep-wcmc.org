@@ -941,7 +941,7 @@ ul.subnav.areas ul.submenu_areas li a {
 }
 
 /* line 778, ../sass/base.scss */
-select#sorting, div#search-field {
+select#sorting, div.search-field {
   width: 100%;
   cursor: pointer;
   background: #fff;
@@ -967,11 +967,11 @@ select#sorting, select#sorting option {
 }
 
 /* line 802, ../sass/base.scss */
-div#search-field {
+div.search-field {
   overflow: hidden;
 }
 /* line 804, ../sass/base.scss */
-div#search-field input {
+div.search-field input {
   box-shadow: none;
   background: none;
   font-family: "museo-sans", Helvetica, Arial, sans-serif;
@@ -985,7 +985,7 @@ div#search-field input {
   float: left;
 }
 /* line 817, ../sass/base.scss */
-div#search-field i {
+div.search-field i {
   color: #5e5a5c;
   font-size: 0.85em;
   display: block;
@@ -1440,7 +1440,7 @@ div.column-1-3#data-small {
   display: block;
 }
 /* line 1216, ../sass/base.scss */
-div.column-1-3#data-small div#search-field {
+div.column-1-3#data-small div.search-field {
   margin-bottom: 10px;
 }
 /* line 1220, ../sass/base.scss */
@@ -1498,10 +1498,15 @@ ul.subnav {
 }
 
 /* line 1266, ../sass/base.scss */
+ul.subnav.areas {
+  display: block;
+}
+
+/* line 1270, ../sass/base.scss */
 ul.subnav-small {
   overflow: hidden;
 }
-/* line 1268, ../sass/base.scss */
+/* line 1272, ../sass/base.scss */
 ul.subnav-small li {
   padding: 10px 0 5px 0;
   border-bottom: 1px solid #4c9cda;
@@ -1509,15 +1514,15 @@ ul.subnav-small li {
   width: 47%;
   margin-right: 6%;
 }
-/* line 1274, ../sass/base.scss */
+/* line 1278, ../sass/base.scss */
 ul.subnav-small li:nth-child(2n) {
   margin-right: 0;
 }
-/* line 1277, ../sass/base.scss */
+/* line 1281, ../sass/base.scss */
 ul.subnav-small li:nth-child(2n+1) {
   clear: left;
 }
-/* line 1280, ../sass/base.scss */
+/* line 1284, ../sass/base.scss */
 ul.subnav-small li a {
   font-size: 0.85em;
   line-height: 1.4em;
@@ -1528,64 +1533,64 @@ ul.subnav-small li a {
   color: #333;
   border-bottom: 1px solid #fff;
 }
-/* line 1289, ../sass/base.scss */
+/* line 1293, ../sass/base.scss */
 ul.subnav-small li a.active {
   color: #4c9cda;
 }
 
-/* line 1296, ../sass/base.scss */
+/* line 1300, ../sass/base.scss */
 section#actions-column {
   display: none;
 }
 
-/* line 1300, ../sass/base.scss */
+/* line 1304, ../sass/base.scss */
 section.column-2-3#actions-column-small {
   display: block;
   padding-top: 0;
 }
 
-/* line 1305, ../sass/base.scss */
+/* line 1309, ../sass/base.scss */
 h2.programme {
   line-height: 1em;
   margin: 30px 0 25px 0;
   padding-bottom: 20px;
   border-bottom: 2px solid #eee;
 }
-/* line 1310, ../sass/base.scss */
+/* line 1314, ../sass/base.scss */
 h2.programme:first-of-type {
   margin-top: 50px;
 }
 
-/* line 1315, ../sass/base.scss */
+/* line 1319, ../sass/base.scss */
 div.column-1-3#job_related {
   display: none;
 }
 
-/* line 1319, ../sass/base.scss */
+/* line 1323, ../sass/base.scss */
 div.container.job-related, div.container.news-related {
   background: #f4f2f2;
   width: 100%;
   margin-bottom: -60px;
 }
 
-/* line 1325, ../sass/base.scss */
+/* line 1329, ../sass/base.scss */
 .container.job-related div.column-1-3#job_related_small, .container.news-related div.column-1-3#news-small {
   clear: both;
   width: 90%;
   margin: 0 5%;
   padding-bottom: 60px;
 }
-/* line 1330, ../sass/base.scss */
+/* line 1334, ../sass/base.scss */
 .container.job-related div.column-1-3#job_related_small h1, .container.news-related div.column-1-3#news-small h1 {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
-/* line 1333, ../sass/base.scss */
+/* line 1337, ../sass/base.scss */
 .container.job-related div.column-1-3#job_related_small h1:first-of-type, .container.news-related div.column-1-3#news-small h1:first-of-type {
   margin-top: 0;
 }
 
-/* line 1340, ../sass/base.scss */
+/* line 1344, ../sass/base.scss */
 .container.news-related div.column-1-3#news-small h1 {
   text-align: center;
   display: block;
@@ -1596,22 +1601,22 @@ div.container.job-related, div.container.news-related {
   border: none;
 }
 
-/* line 1351, ../sass/base.scss */
+/* line 1355, ../sass/base.scss */
 div.column-2-3.left#job_description {
   clear: both;
   width: 100%;
 }
-/* line 1354, ../sass/base.scss */
+/* line 1358, ../sass/base.scss */
 div.column-2-3.left#job_description div.button {
   margin: 30px 0 60px 0;
 }
 
-/* line 1359, ../sass/base.scss */
+/* line 1363, ../sass/base.scss */
 div.column-1-3#save-link {
   display: none;
 }
 
-/* line 1363, ../sass/base.scss */
+/* line 1367, ../sass/base.scss */
 div.column-1-3.right#save-link-small {
   clear: both;
   width: 100%;
@@ -1619,27 +1624,27 @@ div.column-1-3.right#save-link-small {
   margin-bottom: 40px;
   float: none;
 }
-/* line 1369, ../sass/base.scss */
+/* line 1373, ../sass/base.scss */
 div.column-1-3.right#save-link-small i {
   right: -218px;
 }
 
-/* line 1374, ../sass/base.scss */
+/* line 1378, ../sass/base.scss */
 div.column-2-3.left#job_application {
   clear: both;
   width: 100%;
 }
-/* line 1377, ../sass/base.scss */
+/* line 1381, ../sass/base.scss */
 div.column-2-3.left#job_application div.button {
   margin: 50px 0 60px 0;
   width: 100%;
 }
 
-/* line 1383, ../sass/base.scss */
+/* line 1387, ../sass/base.scss */
 .container .column-1-3 section.actions, .container .column-2-3 section.actions {
   margin-bottom: 20px;
 }
-/* line 1385, ../sass/base.scss */
+/* line 1389, ../sass/base.scss */
 .container .column-1-3 section.actions h1, .container .column-2-3 section.actions h1 {
   margin-bottom: 10px;
   font-size: 1em;
@@ -1649,11 +1654,11 @@ div.column-2-3.left#job_application div.button {
   margin: 4px 0 10px 0;
   padding-bottom: 5px;
 }
-/* line 1394, ../sass/base.scss */
+/* line 1398, ../sass/base.scss */
 .container .column-1-3 section.actions#share, .container .column-2-3 section.actions#share {
   font-weight: 300;
 }
-/* line 1396, ../sass/base.scss */
+/* line 1400, ../sass/base.scss */
 .container .column-1-3 section.actions#share h1, .container .column-2-3 section.actions#share h1 {
   border: none;
   display: inline;
@@ -1661,11 +1666,11 @@ div.column-2-3.left#job_application div.button {
   padding-right: 5px;
   font-weight: 300;
 }
-/* line 1403, ../sass/base.scss */
+/* line 1407, ../sass/base.scss */
 .container .column-1-3 section.actions#share span, .container .column-2-3 section.actions#share span {
   font-size: 0.85em;
 }
-/* line 1405, ../sass/base.scss */
+/* line 1409, ../sass/base.scss */
 .container .column-1-3 section.actions#share span a, .container .column-2-3 section.actions#share span a {
   display: inline-block;
   text-transform: none;
@@ -1674,28 +1679,28 @@ div.column-2-3.left#job_application div.button {
   padding: 0 8px 0 0;
   cursor: pointer;
 }
-/* line 1412, ../sass/base.scss */
+/* line 1416, ../sass/base.scss */
 .container .column-1-3 section.actions#share span a:last-of-type, .container .column-2-3 section.actions#share span a:last-of-type {
   border: none;
   padding: 0 0 0 4px;
 }
-/* line 1415, ../sass/base.scss */
+/* line 1419, ../sass/base.scss */
 .container .column-1-3 section.actions#share span a:last-of-type i, .container .column-2-3 section.actions#share span a:last-of-type i {
   font-size: 1.25em;
 }
-/* line 1419, ../sass/base.scss */
+/* line 1423, ../sass/base.scss */
 .container .column-1-3 section.actions#share span a:hover, .container .column-1-3 section.actions#share span a:active, .container .column-2-3 section.actions#share span a:hover, .container .column-2-3 section.actions#share span a:active {
   text-decoration: none;
   color: #4c9cda;
 }
 
-/* line 1428, ../sass/base.scss */
+/* line 1432, ../sass/base.scss */
 .container .column-2-3 section.actions {
   padding-bottom: 0;
   margin-bottom: 30px;
 }
 
-/* line 1434, ../sass/base.scss */
+/* line 1438, ../sass/base.scss */
 div#team-details span {
   font-size: 1em;
   color: #5e5a5c;
@@ -1705,32 +1710,37 @@ div#team-details span {
   font-size: 0.85em;
   margin-bottom: 20px;
 }
-/* line 1442, ../sass/base.scss */
+/* line 1446, ../sass/base.scss */
 div#team-details span:first-child {
   padding: 0 10px 0 0;
   border-right: 1px solid #ddd;
 }
-/* line 1446, ../sass/base.scss */
+/* line 1450, ../sass/base.scss */
 div#team-details span i {
   color: #ddd;
 }
 
-/* line 1452, ../sass/base.scss */
+/* line 1456, ../sass/base.scss */
 .container div.column-2-3 section.group.staff:last-child {
   padding-bottom: 20px;
 }
 
-/* line 1456, ../sass/base.scss */
+/* line 1460, ../sass/base.scss */
 .container div.column-1-3#news {
   display: none;
 }
 
-/* line 1460, ../sass/base.scss */
+/* line 1464, ../sass/base.scss */
 .container div.column-2-3.left#news-item {
   width: 100%;
 }
 
-/* line 1464, ../sass/base.scss */
+/* line 1468, ../sass/base.scss */
 div#news-item {
   margin-bottom: 30px;
+}
+
+/* line 1472, ../sass/base.scss */
+div.search-field#staff input, div.search-field#staff i {
+  font-size: 0.85em;
 }

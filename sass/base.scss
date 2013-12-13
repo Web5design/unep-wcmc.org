@@ -775,7 +775,7 @@ ul.subnav {
 	}
 }
 
-select#sorting, div#search-field {
+select#sorting, div.search-field {
   width: 100%;
   cursor: pointer;
   background: #fff;
@@ -799,7 +799,7 @@ select#sorting, select#sorting option {
   padding: 5px 10px;
 }
 
-div#search-field {
+div.search-field {
   overflow: hidden;
   input {
     box-shadow: none;
@@ -1213,7 +1213,7 @@ div.column-1-3#data {
 }
 
 div.column-1-3#data-small {
-  div#search-field {
+  div.search-field {
     margin-bottom: 10px;
   }
   display: block;
@@ -1261,6 +1261,10 @@ div.column-1-3#data-small {
 
 ul.subnav {
   display: none;
+}
+
+ul.subnav.areas {
+  display: block;
 }
 
 ul.subnav-small {
@@ -1463,4 +1467,8 @@ div#team-details {
 
 div#news-item {
   margin-bottom: 30px;
+}
+
+div.search-field#staff input, div.search-field#staff i {
+  font-size: 0.85em;
 }

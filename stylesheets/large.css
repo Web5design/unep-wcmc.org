@@ -415,12 +415,12 @@ div.container#other-news-small {
 }
 
 /* line 350, ../sass/large.scss */
-select#sorting, div#search-field input {
+select#sorting, div.search-field input {
   font-size: 0.85em;
 }
 
 /* line 354, ../sass/large.scss */
-div#search-field i {
+div.search-field i {
   font-size: 0.85em;
 }
 

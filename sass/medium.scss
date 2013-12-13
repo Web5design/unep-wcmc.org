@@ -82,7 +82,8 @@ $grey_text: #5e5a5c;
     
   }
   .column-2-3 {
-    padding-top: 60px;
+    margin-top: -50px;
+    padding-top: 110px;
     width: 63%;
     float: right;
     &.left {
@@ -432,6 +433,6 @@ div.data_policy, div.data_policy-small{
   }
 }
 
-div#search-field input, div#search-field i {
+div.search-field input, div.search-field i {
   font-size: 0.75em;
 }
