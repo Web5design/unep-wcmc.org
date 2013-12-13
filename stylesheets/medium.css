@@ -1,15 +1,15 @@
 /* line 7, ../sass/medium.scss */
-#container {
+.container {
   width: 90%;
   margin: auto;
   overflow: hidden;
 }
 /* line 11, ../sass/medium.scss */
-#container img {
+.container img {
   max-width: 100%;
 }
 /* line 13, ../sass/medium.scss */
-#container img.areas_work {
+.container img.areas_work {
   display: inline-block;
   float: right;
   max-width: 50%;
@@ -17,96 +17,96 @@
   padding: 0;
 }
 /* line 21, ../sass/medium.scss */
-#container section.group {
+.container section.group {
   width: 47.5%;
   margin-right: 5%;
   float: left;
 }
 /* line 25, ../sass/medium.scss */
-#container section.group:nth-child(2n) {
+.container section.group:nth-child(2n) {
   margin-right: 0;
 }
 /* line 28, ../sass/medium.scss */
-#container section.group:nth-child(2n+3) {
+.container section.group:nth-child(2n+3) {
   clear: left;
 }
 /* line 31, ../sass/medium.scss */
-#container section.group#twitter {
+.container section.group#twitter {
   padding: 25px;
 }
 /* line 33, ../sass/medium.scss */
-#container section.group#twitter #top_twitter {
+.container section.group#twitter #top_twitter {
   width: 100%;
   padding: 2% 0 5% 0;
 }
 /* line 36, ../sass/medium.scss */
-#container section.group#twitter #top_twitter div.button {
+.container section.group#twitter #top_twitter div.button {
   width: 120px;
   margin-right: 1.75%;
 }
 /* line 41, ../sass/medium.scss */
-#container section.group#twitter .tweet {
+.container section.group#twitter .tweet {
   padding: 3% 0;
 }
 /* line 43, ../sass/medium.scss */
-#container section.group#twitter .tweet:last-child {
+.container section.group#twitter .tweet:last-child {
   padding-bottom: 0;
 }
 /* line 46, ../sass/medium.scss */
-#container section.group#twitter .tweet small {
+.container section.group#twitter .tweet small {
   margin-bottom: 3%;
 }
 /* line 51, ../sass/medium.scss */
-#container section.group:last-child {
+.container section.group:last-child {
   margin-right: 0;
 }
 /* line 55, ../sass/medium.scss */
-#container .column-1-3 {
+.container .column-1-3 {
   width: 30%;
   float: left;
   padding-top: 60px;
   margin-right: 7%;
 }
 /* line 60, ../sass/medium.scss */
-#container .column-1-3.right {
+.container .column-1-3.right {
   float: right;
   padding: 0 0 0 9%;
   margin-top: 60px;
 }
 /* line 65, ../sass/medium.scss */
-#container .column-1-3 img.employee_pic {
+.container .column-1-3 img.employee_pic {
   width: 100%;
   margin-top: 30px;
 }
 /* line 69, ../sass/medium.scss */
-#container .column-1-3 img.partner_logo {
+.container .column-1-3 img.partner_logo {
   width: 70%;
   margin-top: 30px;
 }
 /* line 73, ../sass/medium.scss */
-#container .column-1-3 section.actions {
+.container .column-1-3 section.actions {
   padding-bottom: 0;
 }
 /* line 75, ../sass/medium.scss */
-#container .column-1-3 section.actions:first-child {
+.container .column-1-3 section.actions:first-child {
   margin-top: 22px;
 }
 /* line 78, ../sass/medium.scss */
-#container .column-1-3 section.actions p {
+.container .column-1-3 section.actions p {
   font-size: 1em;
 }
 /* line 84, ../sass/medium.scss */
-#container .column-2-3 {
+.container .column-2-3 {
   padding-top: 60px;
   width: 63%;
   float: right;
 }
 /* line 88, ../sass/medium.scss */
-#container .column-2-3.left {
+.container .column-2-3.left {
   float: left;
 }
 /* line 92, ../sass/medium.scss */
-#container .column-2-3#featured-project h2 {
+.container .column-2-3#featured-project h2 {
   font-size: 1.65em;
 }
 
@@ -155,8 +155,8 @@ h1, h2, h3, h5 {
 /* line 132, ../sass/medium.scss */
 h1 {
   font-size: 2.25em;
-  line-height: 1em;
-  margin: 0 0 0.75em 0;
+  line-height: 1.2em;
+  margin: 0 0 30px 0;
   color: #5e5a5c;
 }
 
@@ -175,21 +175,19 @@ h2.smaller {
 /* line 148, ../sass/medium.scss */
 h2.large_subheading {
   font-size: 1.4em;
-}
-/* line 150, ../sass/medium.scss */
-h2.large_subheading#featured_projects {
   font-size: 2em;
-  padding: 60px 0 60px 0;
+  padding: 60px 0 30px 0;
+  text-align: center;
 }
 
-/* line 157, ../sass/medium.scss */
+/* line 156, ../sass/medium.scss */
 h3#news {
   margin-bottom: 60px;
   padding-top: 60px;
   font-size: 1em;
 }
 
-/* line 163, ../sass/medium.scss */
+/* line 162, ../sass/medium.scss */
 h4 {
   width: 100%;
   font-size: 0.75em;
@@ -200,7 +198,7 @@ h4 {
   line-height: 1.75em;
 }
 
-/* line 173, ../sass/medium.scss */
+/* line 172, ../sass/medium.scss */
 h5 {
   font-weight: 500;
   font-size: 2em;
@@ -209,66 +207,66 @@ h5 {
   margin-bottom: 2%;
 }
 
-/* line 182, ../sass/medium.scss */
+/* line 181, ../sass/medium.scss */
 div#nav {
   width: 100%;
   overflow: hidden;
 }
-/* line 185, ../sass/medium.scss */
+/* line 184, ../sass/medium.scss */
 div#nav a#home_link {
   float: left;
   width: 50%;
   padding: 20px 5%;
 }
-/* line 189, ../sass/medium.scss */
+/* line 188, ../sass/medium.scss */
 div#nav a#home_link img {
   max-width: 100%;
 }
-/* line 193, ../sass/medium.scss */
+/* line 192, ../sass/medium.scss */
 div#nav ul {
   margin: auto;
   overflow: hidden;
 }
-/* line 196, ../sass/medium.scss */
+/* line 195, ../sass/medium.scss */
 div#nav ul li {
   padding: 3.25% 0 0 2%;
   float: right;
 }
-/* line 200, ../sass/medium.scss */
+/* line 199, ../sass/medium.scss */
 div#nav ul#button-menu {
   display: none;
   clear: both;
   padding: 2% 5%;
 }
-/* line 204, ../sass/medium.scss */
+/* line 203, ../sass/medium.scss */
 div#nav ul#button-menu li {
   padding: 0 0 3px 0;
   margin: 0;
   clear: both;
   text-align: right;
 }
-/* line 209, ../sass/medium.scss */
+/* line 208, ../sass/medium.scss */
 div#nav ul#button-menu li:last-child {
   padding-bottom: 0;
 }
 
-/* line 217, ../sass/medium.scss */
+/* line 216, ../sass/medium.scss */
 div.banner {
   margin: 0 0 60px 0;
 }
-/* line 219, ../sass/medium.scss */
+/* line 218, ../sass/medium.scss */
 div.banner img {
   max-width: 100%;
 }
 
-/* line 224, ../sass/medium.scss */
+/* line 223, ../sass/medium.scss */
 div.heading {
   width: 90%;
   margin: auto;
   padding: 100px 0;
   text-align: center;
 }
-/* line 229, ../sass/medium.scss */
+/* line 228, ../sass/medium.scss */
 div.heading h1 {
   margin-bottom: 0;
   font-size: 2.25em;
@@ -276,11 +274,11 @@ div.heading h1 {
   font-weight: bold;
   display: inline-block;
 }
-/* line 235, ../sass/medium.scss */
+/* line 234, ../sass/medium.scss */
 div.heading h1#featured {
   font-size: 2em;
 }
-/* line 239, ../sass/medium.scss */
+/* line 238, ../sass/medium.scss */
 div.heading h2 {
   display: inline-block;
   font-weight: 300;
@@ -289,95 +287,88 @@ div.heading h2 {
   line-height: 1.4em;
   font-family: "museo-sans", Helvetica, Arial, sans-serif;
 }
-/* line 247, ../sass/medium.scss */
+/* line 246, ../sass/medium.scss */
 div.heading h1, div.heading h2 {
   padding: 1% 0;
   color: #fff;
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
-/* line 252, ../sass/medium.scss */
+/* line 251, ../sass/medium.scss */
 div.heading h1.short, div.heading h2.short, div.heading h2.shorter {
   margin: auto;
 }
 
-/* line 257, ../sass/medium.scss */
+/* line 256, ../sass/medium.scss */
 div.hero#species div.heading {
   width: 45%;
   margin-left: 15%;
   text-align: left;
 }
 
-/* line 263, ../sass/medium.scss */
-div#container.other_projects {
-  padding-bottom: 60px;
-  margin-bottom: -60px;
-}
-
-/* line 268, ../sass/medium.scss */
+/* line 262, ../sass/medium.scss */
 div#welcome, div#featured_heading {
   margin: auto;
   margin-bottom: 60px;
   width: 90%;
 }
-/* line 269, ../sass/medium.scss */
+/* line 263, ../sass/medium.scss */
 div#welcome h1, div#featured_heading h1 {
   font-size: 2.5em;
   line-height: 1.25em;
 }
-/* line 276, ../sass/medium.scss */
+/* line 270, ../sass/medium.scss */
 div#welcome p, div#featured_heading p {
   font-size: 1.2em;
 }
 
-/* line 281, ../sass/medium.scss */
+/* line 275, ../sass/medium.scss */
 div#welcome {
   padding-top: 0;
   padding-bottom: 0;
 }
 
-/* line 286, ../sass/medium.scss */
+/* line 280, ../sass/medium.scss */
 div#featured_heading {
   margin-top: 60px;
   padding: 0;
 }
-/* line 287, ../sass/medium.scss */
+/* line 281, ../sass/medium.scss */
 div#featured_heading h2 {
   font-size: 2em;
 }
 
-/* line 294, ../sass/medium.scss */
+/* line 288, ../sass/medium.scss */
 div#footer_container {
   padding: 30px 0;
   margin-top: 60px;
 }
 
-/* line 299, ../sass/medium.scss */
+/* line 293, ../sass/medium.scss */
 ul.footer {
   width: 90%;
   margin: auto;
 }
-/* line 302, ../sass/medium.scss */
+/* line 296, ../sass/medium.scss */
 ul.footer li {
-  padding: 0 1%;
   float: left;
 }
 
-/* line 308, ../sass/medium.scss */
+/* line 301, ../sass/medium.scss */
 iframe {
   margin: 20px 0;
 }
 
-/* line 312, ../sass/medium.scss */
+/* line 305, ../sass/medium.scss */
 .call-action {
   margin-top: 40px;
 }
-/* line 314, ../sass/medium.scss */
+/* line 307, ../sass/medium.scss */
 .call-action div.button#action {
   padding: 10px 20px;
   width: 280px;
 }
 
-/* line 320, ../sass/medium.scss */
+/* line 313, ../sass/medium.scss */
 button#trigger-menu {
   background: none;
   float: right;
@@ -388,77 +379,139 @@ button#trigger-menu {
   margin: 20px 0;
 }
 
-/* line 330, ../sass/medium.scss */
+/* line 323, ../sass/medium.scss */
 ul.subnav#staff {
   margin-bottom: 30px;
 }
 
-/* line 334, ../sass/medium.scss */
+/* line 327, ../sass/medium.scss */
 h1.page_header#featured {
   padding-top: 60px;
 }
 
-/* line 338, ../sass/medium.scss */
+/* line 331, ../sass/medium.scss */
 div.column-1-3#data {
   display: block;
 }
 
-/* line 343, ../sass/medium.scss */
+/* line 336, ../sass/medium.scss */
 div.column-1-3#data-small {
   display: none;
 }
 
-/* line 347, ../sass/medium.scss */
+/* line 340, ../sass/medium.scss */
 div.data_policy-small {
   display: none;
 }
 
-/* line 351, ../sass/medium.scss */
+/* line 344, ../sass/medium.scss */
 ul.subnav {
   display: block;
 }
 
-/* line 355, ../sass/medium.scss */
+/* line 348, ../sass/medium.scss */
 ul.subnav-small {
   display: none;
 }
 
-/* line 359, ../sass/medium.scss */
+/* line 352, ../sass/medium.scss */
 div#button-row {
   margin-top: 1em;
 }
-/* line 361, ../sass/medium.scss */
+/* line 354, ../sass/medium.scss */
 div#button-row div.button#more_projects {
   margin: auto;
   width: 290px;
 }
 
-/* line 367, ../sass/medium.scss */
+/* line 360, ../sass/medium.scss */
 div.column-1-3#job_related_small section.group.staff {
   width: 22%;
   margin-right: 4%;
 }
-/* line 370, ../sass/medium.scss */
+/* line 363, ../sass/medium.scss */
 div.column-1-3#job_related_small section.group.staff:nth-child(4n) {
   margin-right: 0;
 }
-/* line 373, ../sass/medium.scss */
+/* line 366, ../sass/medium.scss */
 div.column-1-3#job_related_small section.group.staff:nth-child(4n+4) {
   clear: none;
 }
 
-/* line 378, ../sass/medium.scss */
+/* line 371, ../sass/medium.scss */
 div.column-1-3.right#save-link-small i {
   right: -618px;
 }
 
-/* line 382, ../sass/medium.scss */
+/* line 375, ../sass/medium.scss */
 div.column-2-3.left#job_application div.button {
   width: 250px;
 }
 
-/* line 386, ../sass/medium.scss */
-#container div.column-2-3.left#job_application h1 span {
+/* line 379, ../sass/medium.scss */
+.container div.column-2-3.left#job_application h1 span {
   display: inline;
   font-size: 0.45em;
+}
+
+/* line 384, ../sass/medium.scss */
+section#actions-column {
+  display: block;
+}
+
+/* line 388, ../sass/medium.scss */
+section.column-2-3#actions-column-small {
+  display: none;
+}
+
+/* line 393, ../sass/medium.scss */
+div.container#other_projects h2.large_subheading, div.container#other-news-small h2.large_subheading {
+  text-align: center;
+}
+
+/* line 398, ../sass/medium.scss */
+div#footer_container {
+  background: url("../imgs/map_world.png") no-repeat center;
+  width: 100%;
+  position: absolute;
+  background-size: 100%;
+}
+
+/* line 405, ../sass/medium.scss */
+ul.footer {
+  overflow: hidden;
+}
+/* line 407, ../sass/medium.scss */
+ul.footer li {
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 0;
+}
+/* line 411, ../sass/medium.scss */
+ul.footer li#logo {
+  float: right;
+  padding-right: 0;
+  padding-top: 0;
+}
+/* line 415, ../sass/medium.scss */
+ul.footer li#logo img {
+  float: right;
+}
+
+/* line 423, ../sass/medium.scss */
+div.data_policy h3, div.data_policy-small h3 {
+  color: #5e5a5c;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+/* line 429, ../sass/medium.scss */
+div.data_policy p, div.data_policy-small p {
+  font-size: 0.85em;
+  margin-bottom: 0;
+}
+
+/* line 435, ../sass/medium.scss */
+div#search-field input, div#search-field i {
+  font-size: 0.75em;
 }

@@ -37,16 +37,12 @@
 				<h2 class="short">We source, collate, verify and analyse information on biodiversity and ecosystems. Many of our outputs are freely available to download or view through publicly accessible websites.</h2>
 			</div><!--heading-->
 		</div><!--hero-->
-		<div id="container">
+		<div class="container">
 		  <div id="data-small" class="column-1-3">
-				<div class="search_field_container">
-					<div class="search_input">
-						<p>Search resources or datasets</p>
-					</div><!--search_input-->
-					<div class="icon_search">
-						<i class="icon-search"></i>
-					</div><!--icon_search-->
-				</div><!--search field-->
+  		  <div id="search-field">
+  		    <input class="short" type="text" name="firstname" placeholder="Search resources or datasets">
+  		    <i class="icon-search"></i>
+  		  </div>
         <button>Most recent first <i class="icon-caret-down"></i></button>
         <button id="content-button">Type of content <i class="icon-caret-down"></i></button>
         <ul id="content-small">
@@ -80,20 +76,14 @@
 				</div><!-- data policy -->
   		</div><!--column-1-3-->
   		<div id="data" class="column-1-3">
-				<div class="search_field_container">
-					<div class="search_input">
-						<p>Search resources or datasets</p>
-					</div><!--search_input-->
-					<div class="icon_search">
-						<i class="icon-search"></i>
-					</div><!--icon_search-->
-				</div><!--search field-->
-				<ul id="sorting">
-					<li class="last">
-						<span class="badge"><i class="icon-caret-down"></i></span>
-						Most recent first
-					</li>
-				</ul>
+  		  <div id="search-field">
+  		    <input class="short" type="text" name="firstname" placeholder="Search resources or datasets">
+  		    <i class="icon-search"></i>
+  		  </div>
+  		  <select id="sorting">
+          <option value="Most recent first">Most recent first</option>
+          <option value="A to Z">A to Z</option>
+        </select>
 				<ul id="content">
 					<li class="header">
 					  Type of content
@@ -186,7 +176,10 @@
 				<li><a href="partners.html" title="Partners">Partners</a></li>
 				<li><a href="vacancies.html" title="Vacancies">Vacancies</a></li>
 				<li><a href="staff.html" title="The Team">The Team</a></li>
-    		<li><a href="contact.html#contact-page" title="Contact">Contact</a></li>	
+    		<li><a href="contact.html#contact-page" title="Contact">Contact</a></li>
+    		<li><a href="contact.html#contact-page" title="Contact">wcmc.org.uk</a></li>    			
+    		<li id="logo"><a href="contact.html#contact-page" title="Contact"><img src="imgs/logos/unep_logo.png" width="" height="" alt="project 2"/>					
+				</a></li>    			
 			</ul>
 		</div><!--#footer-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
