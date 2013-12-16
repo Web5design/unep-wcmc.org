@@ -4,6 +4,7 @@ $blue: #4c9cda;
 $dark_blue: #4295d5;
 $grey: #f4f2f2;
 $grey_text: #5e5a5c;
+$green: #95BC00;
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -157,6 +158,16 @@ small {
 	margin-bottom: 30px;
 }
 
+ul.expertise {
+  list-style-type: disc;
+  color: $grey_text;
+  font-size: 1em;
+	margin-bottom: 10px;
+	line-height: 1.5em;
+	font-weight: 300;
+	padding-left: 20px;
+}
+
 div.clear {
   clear: both;
 }
@@ -236,28 +247,26 @@ div.hero{
 	}
 }
 
-div.container#other_projects, div.container#other-news-small {
-  background-color: #f7f7f7;
-  padding-bottom: 60px;
-  margin-top: 30px;
-  margin-bottom: -60px;
-  width: 100%;
-  div.section-group {
-    width: 90%;
-    margin: auto;
-  }
-  h2 {
-    text-align: left;
-  }
+div.container#featured_projects {
+  margin-bottom: 30px;
 }
 
-div.container#other_projects, div.container#other-news-small {
-  h2 {
+div.container#other_projects, div.container#other-news-small, div.container#job_related-small {
+  border-top: 1px solid $grey;
+  padding-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: -60px;
+  width: 90%;
+  margin: auto;
+  h2.large_subheading {
+    padding: 0;
+    text-transform: uppercase;
+    font-family: "museo sans";
+    font-weight: 700;
+    font-size: 1.25em;
+    margin: 60px 0 20px 0;
     text-align: left;
-  }
-  
-  section h2:first-of-type {
-    margin-top: 0;
+    width: 100%;
   }
 }
 
@@ -377,7 +386,7 @@ div#button-row {
     display: block;
   }
   .column-2-3 {
-    padding-top: 30px;
+    padding-top: 60px;
     &#staff {
       h2 {
         padding-bottom: 8px;
@@ -509,84 +518,28 @@ div#button-row {
         margin-top: 1em;
       }
     }
-        h2#first {
-                margin-top: 0;
-        }
-        img{
-                display: inline-block;
-                float: right;
-                max-width: 50%;
-                margin: 1% 0 0 3%;
-                padding: 0;
-                &#staff_pic {
-                  float: none;
-                  max-width: 100%;
-                  margin: 0 0 5% 0;
-                }
-        }
-        p.link {
-                letter-spacing: 0.065em;
-        }
-
-    }
-    &#employee_work, &#partner {
-      margin-top: 30px;
-      h1 {
-        margin-bottom: 0.3em;
-        font-size: 2.5em;
-        color: #333;
+      h2#first {
+              margin-top: 0;
       }
-      h3 {
-        margin: 0 0 20px 0;
-        color: #333;
-        font-weight: 500 !important;
-        word-spacing: 0 !important;
-        letter-spacing: 0 !important;
-        span.project_role {
-          text-transform: none;
-        }
-        span.separator {
-          color: #ddd;
-          padding: 0 5px;
-        }
+      img{
+              display: inline-block;
+              float: right;
+              max-width: 50%;
+              margin: 1% 0 0 3%;
+              padding: 0;
+              &#staff_pic {
+                float: none;
+                max-width: 100%;
+                margin: 0 0 5% 0;
+              }
       }
-      span.position {
-        font-size: 1em;
-        text-transform: uppercase;
-        font-family: "museo-sans", Helvetica, Arial, sans-serif;
-      	font-weight: 300;
-      	color: $grey_text;
-      }
-      span.programme_name {
-        display: inline-block;
-        margin-bottom: 2em;
-      }
-      span.programme_bar {
-        color: #59B200; 
-        font-weight: 900;
-        display: inline-block;
-        padding: 2%;
-      }
-      ul.contact_details {
-        color: $grey_text;
-        font-weight: 300;
-        text-align: left;
-        margin-bottom: 1em;
-        i {
-          padding-right: 1%;
-        }
-        li {
-          padding-bottom: 1.5%;
-        }
-      }
-      section {
-        padding: 6% 0;
-	      border-bottom: 1px solid #eee;
+      p.link {
+              letter-spacing: 0.065em;
       }
     }
   }
   .column-1-3 {
-    padding-top: 30px;
+    padding-top: 60px;
     &#job_related, &#job_related_small, &#news, section.actions {
       h1 {
       border-bottom: 1px solid $grey;
@@ -722,19 +675,19 @@ div#button-row {
 ul.subnav {
   border-left: 3px solid $blue;
   padding-left: 5%;
-  margin-top: 14px;
+  margin-top: 8px;
   li{
-		padding-bottom: 1em;
+    padding-bottom: 10px;
 		&:last-child {
 		  padding-bottom: 0;
 		}
 		 a{
-			font-size: 0.85em;
+			font-size: 1em;
 			font-weight: 400;
 			word-spacing: 0.05em;
 			letter-spacing: 0.10em;
 			text-transform: uppercase;
-			color: #333;
+			color: $grey_text;
 			border-bottom: 1px solid #fff;
 			&:hover{
 				color: $blue;
@@ -751,19 +704,23 @@ ul.subnav {
 	}
 	&.areas {
 	  li {
-	    padding-bottom: 0.75em;
-	  }
-	  li#how_we_work {
-	    padding-top: 25px;
+	    padding-bottom: 15px;
+	    text-transform: uppercase;
+	    color: #999;
+	    &:last-of-type {
+	      padding-top: 30px;
+	    }
 	  }
 	  ul.submenu_areas {
-	    li {
-	      padding-bottom: 0.5em;
+      li {
+        padding-bottom: 5px;
     		&:last-child {
-    		  padding-bottom: 0;
+    		  padding-top: 0;
     		}
 	      a {
-	        font-size: 0.9em;
+	        font-size: 0.95em;
+	        line-height: 1.5em;
+	        font-weight: 300;
 	        display: inline-block;
 	        text-transform: none;
     	    word-spacing: 0;
@@ -1008,7 +965,7 @@ div#footer_container {
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
   padding: 25px 0;
-  margin-top: 30px;
+  margin-top: 60px;
   padding: 20px 0;
 }
 
@@ -1442,7 +1399,7 @@ div#team-details {
     padding-left: 10px;
     font-weight: 300;
     font-size: 0.85em;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     &:first-child {
       padding: 0 10px 0 0;
       border-right: 1px solid #ddd;
@@ -1466,9 +1423,49 @@ div#team-details {
 }
 
 div#news-item {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 div.search-field#staff input, div.search-field#staff i {
   font-size: 0.85em;
+}
+
+div.container div.column-2-3#employee_work {
+  padding-top: 150px;
+  h1 {
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    text-transform: none;
+    font-size: 1.2em;
+    color: $grey_text;
+    word-spacing: 0;
+    letter-spacing: 0;
+    span.separator {
+      color: #ddd;
+      padding: 0 5px;
+    }
+    span.project_role {
+      color: #999;
+    }
+    a {
+      font-weight: 400;
+    }
+    &#position {
+      text-transform: uppercase;
+      font-size: 0.85em;
+      margin-bottom: 20px;
+      a {
+        font-weight: 300;
+      }
+    }
+  }
+  
+  section#experience {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
 }

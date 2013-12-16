@@ -465,12 +465,7 @@ section.column-2-3#actions-column-small {
   display: none;
 }
 
-/* line 394, ../sass/medium.scss */
-div.container#other_projects h2.large_subheading, div.container#other-news-small h2.large_subheading {
-  text-align: center;
-}
-
-/* line 399, ../sass/medium.scss */
+/* line 393, ../sass/medium.scss */
 div#footer_container {
   background: url("../imgs/map_world.png") no-repeat center;
   width: 100%;
@@ -478,41 +473,41 @@ div#footer_container {
   background-size: 100%;
 }
 
-/* line 406, ../sass/medium.scss */
+/* line 400, ../sass/medium.scss */
 ul.footer {
   overflow: hidden;
 }
-/* line 408, ../sass/medium.scss */
+/* line 402, ../sass/medium.scss */
 ul.footer li {
   float: left;
   padding-right: 15px;
   padding-bottom: 0;
 }
-/* line 412, ../sass/medium.scss */
+/* line 406, ../sass/medium.scss */
 ul.footer li#logo {
   float: right;
   padding-right: 0;
   padding-top: 0;
 }
-/* line 416, ../sass/medium.scss */
+/* line 410, ../sass/medium.scss */
 ul.footer li#logo img {
   float: right;
 }
 
-/* line 424, ../sass/medium.scss */
+/* line 418, ../sass/medium.scss */
 div.data_policy h3, div.data_policy-small h3 {
   color: #5e5a5c;
   text-align: left;
   margin-top: 0;
   margin-bottom: 3%;
 }
-/* line 430, ../sass/medium.scss */
+/* line 424, ../sass/medium.scss */
 div.data_policy p, div.data_policy-small p {
   font-size: 0.85em;
   margin-bottom: 0;
 }
 
-/* line 436, ../sass/medium.scss */
+/* line 430, ../sass/medium.scss */
 div.search-field input, div.search-field i {
   font-size: 0.75em;
 }
