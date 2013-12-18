@@ -329,7 +329,7 @@ div.button {
   		font-weight: 300;
   		font-size: 1em;
   		margin:0;
-  		letter-spacing: 0.05em;
+  		letter-spacing: 0.015em;
   		color: $dark_blue;
   		text-decoration: none;
   	}
@@ -533,42 +533,32 @@ div#button-row {
       padding-bottom: 1px;
     }
   }
-    section.save-link {
+    section.info-application {
       background: #f7f7f7;
-      padding: 1em;
+      padding: 15px;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
       p {
         font-size: 0.85em;
       }
-      input {
-        border: 1px solid #eee;
-        padding: 0.5em;
-        height: 3em;
-        width: 100%;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
+    }
+    
+    section.info-application {
+      h1 {
+        font-size: 1em;
+        font-weight: 400;
         font-family: "museo-sans", Helvetica, Arial, sans-serif;
-        font-size: 0.85em;
-        font-weight: 300;
-        color: #666;
+        margin-bottom: 10px;
+        i {
+          padding-right: 5px;
         }
-      i {
-        color: #666;
-        background: #ccc;
-        position: relative;
-        top: -29px;
-        right: -189px;
-        padding: 0.7em 0.75em 0.75em 0.75em;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
+      }
+      strong {
+        font-weight: 400;
       }
     }
+
   }
   section {
     padding-bottom: 20px;
@@ -886,25 +876,22 @@ form {
       -moz-border-radius: 3px;
       border-radius: 3px;
       font-family: "museo-sans", Helvetica, Arial, sans-serif;
-      font-size: 1.1em;
+      font-size: 1em;
       font-weight: 300;
       color: $grey_text;
       padding: 0.5em;
     }
     input[type="radio"], input[type="checkbox"] {
       width: 2%;
+      margin-left: 1px;
+      margin-right: 5px;
     }
-    input.short {
-      height: 2em;
-      border: 1px solid #eee;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px;
-      font-family: "museo-sans", Helvetica, Arial, sans-serif;
-      font-size: 1.1em;
-      font-weight: 300;
-      color: $grey_text;
-      padding: 0 0.5em;
+    
+    p#practical-instructions {
+      margin-bottom: 15px;
+    }
+    input.state {
+      margin-top: -10px;
     }
   }
 }
@@ -1279,27 +1266,50 @@ div.column-2-3.left#job_description {
   }
 }
 
-div.column-1-3#save-link {
+div.column-1-3#application-related {
   display: none;
-}
-
-div.column-1-3.right#save-link-small {
-  clear: both;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 40px;
-  float: none;
-  i {
-    right: -218px;
-  }
 }
 
 div.column-2-3.left#job_application {
   clear: both;
   width: 100%;
-  div.button {
-    margin: 50px 0 60px 0;
-    width: 100%;
+  section.info-application-small {
+    background: #f7f7f7;
+    padding: 15px 15px 5px 15px !important;
+    margin-bottom: 30px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    p {
+      font-size: 0.85em;
+    }
+    h1 {
+      font-size: 1em;
+      font-weight: 400;
+      font-family: "museo-sans", Helvetica, Arial, sans-serif;
+      margin-bottom: 10px;
+      i {
+        padding-right: 5px;
+      }
+    }
+    strong {
+      font-weight: 400;
+    }
+  }
+  div#application-buttons {
+    overflow: hidden;
+    margin-bottom: 30px;
+    div.button {
+      margin: 50px 0 0 0;
+      width: 100%;
+      &.submit {
+        background: $blue;
+        margin: 20px 0 0 0;
+        a {
+          color: #fff;
+        }
+      }
+    }
   }
 }
 

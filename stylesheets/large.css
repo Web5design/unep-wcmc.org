@@ -443,3 +443,13 @@ ul#fields li.header, ul#content li.header, ul#fields-small li.header, ul#content
 div.container#other_projects h2.large_subheading, div.container#other-news-small h2.large_subheading {
   text-align: center;
 }
+
+/* line 381, ../sass/large.scss */
+.container div.column-2-3.left section.info-application-small {
+  display: none;
+}
+
+/* line 385, ../sass/large.scss */
+.container div.column-1-3.right#application-related {
+  display: block;
+}

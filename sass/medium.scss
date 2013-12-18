@@ -1,7 +1,8 @@
-$blue: #94BBFF;
-$dark_blue: #5175A3;
+$blue: #4c9cda;
+$dark_blue: #4295d5;
 $grey: #f4f2f2;
 $grey_text: #5e5a5c;
+$green: #95BC00;
 
 
 .container {
@@ -373,6 +374,27 @@ div.column-1-3.right#save-link-small i {
   right: -618px;
 }
 
+.container div.column-2-3.left#job_application {
+  div#application-buttons {
+    overflow: hidden;
+    margin-bottom: 30px;
+    div.button {
+      margin: 50px 0 0 0;
+      width: 45%;
+      float: right;
+      &.submit {
+        background: $blue;
+        margin-right: 30px;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
 div.column-2-3.left#job_application div.button {
   width: 250px;
 }
@@ -429,4 +451,18 @@ div.data_policy, div.data_policy-small{
 
 div.search-field input, div.search-field i {
   font-size: 0.75em;
+}
+
+form {
+  section {
+    p.radio-state {
+      display: inline;
+      padding-right: 20px;
+    }
+    input.state {
+      display: inline;
+      width: 40%;
+      margin-top: 0px;
+    }
+  }
 }
