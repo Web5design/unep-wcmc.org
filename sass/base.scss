@@ -481,43 +481,6 @@ div#button-row {
       color: #333;
       margin: 0.75em 0;
     }
-
-    .form-section {
-      margin-top: 2em;
-      p {
-        margin: 0;
-      }
-      input.short {
-        width: 50%;
-        height: 2em;
-        margin: 0.5em 0 1em 0;
-        border: 1px solid #eee;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        font-family: "museo-sans", Helvetica, Arial, sans-serif;
-        font-size: 1.1em;
-        font-weight: 300;
-        color: $grey_text;
-        padding: 0 0.5em;
-      }
-      textarea {
-        width: 100%;
-        margin: 0.5em 0 1em 0;
-        border: 1px solid #eee;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        font-family: "museo-sans", Helvetica, Arial, sans-serif;
-        font-size: 1.1em;
-        font-weight: 300;
-        color: $grey_text;
-        padding: 0.5em;
-      }
-      .form-subsection {
-        margin-top: 1em;
-      }
-    }
       h2#first {
               margin-top: 0;
       }
@@ -932,7 +895,6 @@ form {
       width: 2%;
     }
     input.short {
-      width: 75%;
       height: 2em;
       border: 1px solid #eee;
       -webkit-border-radius: 3px;
