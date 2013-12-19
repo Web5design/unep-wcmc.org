@@ -217,7 +217,7 @@ div#nav {
 div#nav a#home_link {
   float: left;
   width: 50%;
-  padding: 20px 5%;
+  padding: 15px 5%;
 }
 /* line 190, ../sass/medium.scss */
 div#nav a#home_link img {
@@ -377,7 +377,7 @@ button#trigger-menu {
   clear: none;
   padding: 0 5%;
   line-height: 38px;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 /* line 325, ../sass/medium.scss */
