@@ -105,19 +105,28 @@ div.project-team {
 div#nav{
 	width:100%;
   overflow: hidden;
-    a#home_link {
-		float: left;
-		width: 40%;
-		padding: 15px 0 15px 15%;
-		img {
-			max-width: 100%;
-		}
-	}
+  a#home_link {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 25%;
+    float: left;
+    margin-left: 15%;
+			img {
+				display: block;
+				background: #4295d5;
+				padding: 5px 20px 15px 20px;
+				-webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+			}
+  }
 	ul#large-menu{
 	  width: 60%;
-		padding: 15px 15% 15px 0;
+		padding: 5px 15% 5px 0;
 		margin: 0;
 	  overflow: hidden;
+	  float: right;
 		li{
 		  padding: 0 0 0 2%;
 			float: right;
@@ -216,11 +225,6 @@ ul.footer{
 	}
 }
 
-.nav-container {
-  width: 70% !important;
-}
-
-
 .slicknav_menu {
 	display:none;
 }
@@ -264,19 +268,6 @@ ul.subnav-small {
   display: none;
 }
 
-section.group.staff#vacancy-team {
-  overflow: hidden;
-  width: 47.5%;
-  margin-right: 5%;
-  float: left !important;
-  &:nth-child(2n) {  
-    margin-right: 0;
-  }
-  &:nth-child(2n+3) {  
-    clear: left;
-  } 
-}
-
 div.column-1-3#job_related_small {
   display: none;
 }
@@ -317,7 +308,7 @@ div#news-item {
   section.actions#share {
     font-size: 0.85em;
     span {
-      font-size: 1em !important;
+      font-size: 1em;
     }
   }
 }

@@ -181,14 +181,21 @@ h5{
 
 
 div#nav{
+  margin-top: 0;
 	width:100%;
   overflow: hidden;
+  border-top: 10px solid $dark_blue;
     a#home_link {
 		float: left;
-		width: 50%;
-		padding: 15px 5%;
+		width: 40%;
+		padding: 10px 0;
+		margin-left: 5%;
 		img {
 			max-width: 100%;
+			padding: 10px 20px 15px 20px;
+			-webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 		}
 	}
 	ul{
@@ -201,7 +208,7 @@ div#nav{
 		&#button-menu {
       display: none;
       clear: both;
-      padding: 2% 5%;
+      padding: 0 5% 20px 5%;
       li {
         padding: 0 0 3px 0;
         margin: 0;
@@ -319,7 +326,7 @@ button#trigger-menu {
   clear: none;
   padding: 0 5%;
   line-height: 38px;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 ul.subnav#staff {
