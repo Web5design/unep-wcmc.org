@@ -230,36 +230,16 @@ div.banner {
 }
 
 div.heading{
-  width: 90%;
-  margin: auto;
-  padding: 100px 0;
-  text-align: center;
 	h1{
-		margin-bottom: 0;
 		font-size: 2.25em;
 		line-height: 1.25em;
-		font-weight: bold;
 		display: inline-block;
-		&#featured {
-			font-size: 2em;
-		}
 	}
 	h2 {
 	  display: inline-block;
-		font-weight: 300;
-		margin: 0.5em 0;
 		font-size: 1.25em;
 		line-height: 1.4em;
-		font-family: "museo-sans", Helvetica, Arial, sans-serif;
 	}
-	h1,h2{
-		padding: 1% 0;
-		color: #fff;
-		text-shadow: 0 2px 15px rgba(0,0,0,0.3);
-	}
-	h1.short, h2.short, h2.shorter {
-    margin: auto;
-  }
 }
 
 div.hero#species div.heading {
@@ -273,17 +253,13 @@ div#welcome, div#featured_heading {
     font-size: 2.5em;
     line-height: 1.25em;
   }
-  margin: auto;
-  margin-bottom: 60px;
-  width: 90%;
   p {
     font-size: 1.2em;
   }
 }
 
 div#welcome {
-  padding-top: 0;
-  padding-bottom: 0;
+  
 }
 
 div#featured_heading {
@@ -357,6 +333,12 @@ ul.subnav {
 ul.subnav-small {
   display: none;
 }
+
+ul.submenu_areas {
+  display: block;
+  background: none;
+}
+
 
 div#button-row {
     margin-top: 1em;
@@ -472,4 +454,34 @@ form {
       margin-top: 0px;
     }
   }
+}
+
+div.container.status {
+  p {
+    display: block;
+    float: left;
+    width: 90%;
+  }
+  i.icon-chevron-up {
+    text-align: center;
+    display: block;
+    float: right;
+    width: 10%;
+    border-top: none;
+    line-height: 44px;
+    padding: 0;
+  }
+}
+
+div.hero{
+	&#featured_projects{
+		background-position: 0 -80px;
+	}
+	&#data{
+		background-position: 0 -80px;
+	}
+	&#about{
+		background-position: center;
+	}
+	background-size: 100%;
 }

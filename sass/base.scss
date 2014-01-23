@@ -2,9 +2,12 @@
 
 $blue: #4c9cda;
 $dark_blue: #4295d5;
-$grey: #f4f2f2;
+$grey: #ddd;
+$light_grey: #f7f7f7;
 $grey_text: #5e5a5c;
-$green: #95BC00;
+$green: #CCE283;
+$red: #EC8486;
+$yellow: #FFDB65;
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -85,7 +88,6 @@ h3{
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #5175a3;
-    border-top: 1px solid $grey;
 	}
 	&#position {
 	  font-size: 1em;
@@ -158,7 +160,7 @@ small {
 	margin-bottom: 30px;
 }
 
-ul.expertise {
+ul#expertise {
   list-style-type: disc;
   color: $grey_text;
   font-size: 1em;
@@ -221,40 +223,50 @@ div.clear {
 }
 
 div.hero{
-  height: 400px;
-	background: url('../imgs/project_13.png') no-repeat center;
-	background-size: 100%;
-	
 	&#featured_projects{
-		background: url('../imgs/savanna-2.png') no-repeat center;
-		background-size: 100%;
-		background-position: 0 -80px;
+		background-image: url('../imgs/savanna-2.png');
+		background-position: top;
 	}
 	&#data{
-		background: url('../imgs/polar-2.png') no-repeat bottom;
-		background-size: 100%;
-		background-position: 0 -480px;
+		background-image: url('../imgs/polar-2.png');
+		background-position: bottom;
+		.heading h2 {
+		  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+		}
 	}
 	
 	&#about{
-		background: url('../imgs/lake-1.png') no-repeat center;
-		background-size: 100%;
-		background-position: 0 -180px;
+		background-image: url('../imgs/lake-1.png');
+		background-position: center;
+		.heading h2 {
+		  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+		}
 	}
 	&#areas_of_work{
-		background: url('../imgs/rain-forest-3.png') no-repeat bottom;
-		background-size: 100%;
-		background-position: 0 -200px;
+		background-image: url('../imgs/rain-forest-3.png');
+		background-position: center;
 	}
 	&#species{
-		background: url('../imgs/project_10.jpg') no-repeat center;
-		background-size: 100%;
+		background-image: url('../imgs/project_10.jpg');
+		background-position: center;
 		.heading {
 		  width: 60%;
 		  margin-left: 5%;
 		  text-align: left;
+		  h1, h2 {
+		    padding: 0;
+		  }
+		  h2 {
+		    margin: 25px 0;
+		    padding: 5px 0;
+		  }
+		  div.button#featured_project {
+		    margin: 0;
+		  }
 		}
 	}
+	background-size: 200%;
+  background-repeat: no-repeat;
 }
 
 div.container#featured_projects {
@@ -274,7 +286,7 @@ div.container#other_projects, div.container#other-news-small, div.container#job_
     font-family: "museo sans";
     font-weight: 700;
     font-size: 1.25em;
-    margin: 60px 0 20px 0;
+    margin: 60px 0 60px 0;
     text-align: left;
     width: 100%;
   }
@@ -283,8 +295,8 @@ div.container#other_projects, div.container#other-news-small, div.container#job_
 div.heading{
   width: 90%;
   margin: auto;
+  padding: 100px 0;
   text-align: center;
-  height: 500px;
 	h1{
 		margin-bottom: 0;
 		font-size: 1.4em;
@@ -293,9 +305,9 @@ div.heading{
 		&#featured {
 			font-size: 2em;
 		}
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 	}
 	h2 {
-	  display: none;
 		font-weight: 300;
 		margin: 0.5em 0;
 		font-size: 0.85em;
@@ -304,11 +316,11 @@ div.heading{
 		border-top: 1px solid rgba(255,255,255, 0.9);
 		border-bottom: 1px solid rgba(255,255,255, 0.9);
 		margin-top: 20px;
+		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 	}
 	h1,h2{
 		padding: 1% 0;
 		color: #fff;
-		text-shadow: 0 2px 15px rgba(0,0,0,0.3);
 	}
 }
 
@@ -427,21 +439,47 @@ div#button-row {
       p#salary {
         margin-bottom: 30px;
       }
-
+    }
+    &#data_policy, &#takedown {
+      sup {
+        font-size: 0.8em;
+        vertical-align: super;
+        font-weight: bold;
+      }
+      aside {
+        margin-top: 50px;
+        p {
+          font-size: 0.85em;
+        }
+      }
+      ol, ul {
+        list-style-type: lower-alpha;
+        padding: 1em 0 1em 1.25em;
+        li {
+          font-size: 1em;
+          margin-bottom: 0.75em;
+          line-height: 1.5em;
+          font-weight: 300;
+          color: $grey_text;
+        }
+      }
+      ul {
+        list-style-type: disc;
+      }
     }
     ul.partners_logos {
       overflow: hidden;
       margin-top: 20px;
       li {
         display: inline-block;
-        margin: 10px 10px 10px 0;
+        margin: 10px 30px 10px 0;
         float: left;
       }
     }
-    &#data, &#employee_work, &#vacancies-page, &#news-archive, &#partner {
+    &#data-results, &#employee_work, &#vacancies-page, &#news-archive, &#partner {
       section {
         border-bottom: 1px solid $grey;
-        padding: 30px 0;
+        padding: 20px 0;
         overflow: hidden;
         h2 {
           margin-bottom: 0;
@@ -587,7 +625,7 @@ div#button-row {
   }
   section {
     &#twitter{
-  		background: $grey;
+  		background: $light_grey;
   		padding: 25px;
   		#top_twitter{
   			width: 100%;
@@ -638,64 +676,64 @@ div#button-row {
   }
 }
 
+ul.subnav, ul.subnav-small {
+  text-transform: uppercase;
+  font-weight: 300;
+  li {
+    padding: 10px;
+    border-bottom: 1px solid $blue;
+    a {
+      text-decoration: none;
+    }
+    &.header {
+      color: $grey_text;
+      border-bottom: none;
+      i {
+        color: $blue;
+      }
+      &:hover, .active {
+        color: $blue;
+        -webkit-transition: all 0.5s ease;
+  			-moz-transition: all 0.5s ease;
+  			-ms-transition: all 0.5s ease;
+  			-o-transition: all 0.5s ease;
+  			transition: all 0.5s ease;
+  			background: none;
+      }
+    }
+    &:hover, &:active, &.active {
+      background: $blue;
+      a {
+        color: #fff;
+      }
+      -webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+    }
+  }
+  ul.expertise-small, ul.expertise {
+    text-transform: none;
+    padding-left: 10px;
+    font-size: 0.85em;
+    li {
+      line-height: 1.25em;
+    }
+    &:first-of-type {
+      margin-bottom: 15px;
+    }
+    &#specialise li:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  ul.expertise-small {
+    display: none;
+  }
+}
+
 ul.subnav {
-  border-left: 3px solid $blue;
-  padding-left: 5%;
-  margin-top: 8px;
-  li{
-    padding-bottom: 10px;
-		&:last-child {
-		  padding-bottom: 0;
-		}
-		 a{
-			font-size: 1em;
-			font-weight: 400;
-			word-spacing: 0.05em;
-			letter-spacing: 0.10em;
-			text-transform: uppercase;
-			color: $grey_text;
-			border-bottom: 1px solid #fff;
-			&:hover{
-				color: $blue;
-				-webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -ms-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-			}
-			&.active {
-				color: $blue;
-			}
-		}
-	}
-	&.areas {
-	  li {
-	    padding-bottom: 15px;
-	    text-transform: uppercase;
-	    color: #999;
-	    &:last-of-type {
-	      padding-top: 30px;
-	    }
-	  }
-	  ul.submenu_areas {
-      li {
-        padding-bottom: 5px;
-    		&:last-child {
-    		  padding-top: 0;
-    		}
-	      a {
-	        font-size: 0.95em;
-	        line-height: 1.5em;
-	        font-weight: 300;
-	        display: inline-block;
-	        text-transform: none;
-    	    word-spacing: 0;
-    	    letter-spacing: 0;
-    	    margin-left: 10px;
-	      }
-	    }
-	  }
-	}
+  display: none;
 }
 
 select#sorting, div.search-field {
@@ -705,7 +743,7 @@ select#sorting, div.search-field {
 	margin-bottom: 30px;
 	outline: none;
 	line-height: 1.5em;
-	border: 1px solid #eee;
+	border: 1px solid $grey;
   -webkit-appearance: none;
   appearance: none;
   -webkit-border-radius: 5px;
@@ -764,7 +802,7 @@ ul#fields, ul#content, ul#fields-small, ul#content-small, ul#programmes {
 		  cursor: default;
 			font-size: 1em;
 			font-weight: 500;
-			border-bottom: 1px solid #eee;
+			border-bottom: 1px solid $grey;
 		  padding: 0 0 0 3%;
 			margin-bottom: 8%;
 			margin-left: -4.5%;
@@ -843,7 +881,7 @@ ul#fields.staff_filters {
 }
 
 ul#sorting {
-  border: 1px solid #eee;
+  border: 1px solid $grey;
   -webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -862,7 +900,7 @@ ul#sorting {
 
 div.data_policy, div.data_policy-small{
   margin-top: 40px;
-  background: #f7f7f7;
+  background: $light_grey;
   -webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -876,6 +914,7 @@ div.data_policy, div.data_policy-small{
   p {
     font-size: 0.75em;
     margin-bottom: 0;
+    margin-top: 5px
   }
 }
 
@@ -884,7 +923,7 @@ form {
     textarea, input {
       width: 100%;
       margin: 0 0 10px 0;
-      border: 1px solid #eee;
+      border: 1px solid $grey;
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px;
@@ -923,9 +962,6 @@ div#footer_container {
 	background: url('../imgs/map_world_small.png') no-repeat center;
 	background-opacity: 0.2;
 	background-size: 100%;
-	-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
   padding: 25px 0;
   margin-top: 60px;
   padding: 20px 0;
@@ -971,6 +1007,9 @@ ul.footer{
 }
 
 div#welcome {
+  width: 100%;
+  padding: 60px 5% 60px 5%;
+  background: $light_grey;
   h1 {
     font-size: 1.25em;
     line-height: 1.25em;
@@ -988,10 +1027,9 @@ div#featured_heading {
     text-align: center;
     margin-top: 0;
   }
-}
-
-div#welcome {
-  padding: 30px 0;
+  p {
+    margin-bottom: 40px;
+  }
 }
 
 div#news-item {
@@ -1131,7 +1169,7 @@ div.column-1-3#data-small {
     text-align: left;
     background: none;
     display: block;
-    border: 1px solid #eee;
+    border: 1px solid $grey;
     -webkit-border-radius: 5px;
   	-moz-border-radius: 5px;
   	border-radius: 5px;
@@ -1165,44 +1203,6 @@ div.column-1-3#data-small {
   }
 }
 
-ul.subnav {
-  display: none;
-}
-
-ul.subnav.areas {
-  display: block;
-}
-
-ul.subnav-small {
-  overflow: hidden;
-  li{
-		padding: 10px 0 5px 0;
-		border-bottom: 1px solid $blue;
-		float: left;
-		width: 47%;
-		margin-right: 6%;
-		&:nth-child(2n) {
-		  margin-right: 0;
-		}
-		&:nth-child(2n+1) {
-		  clear: left;
-		}
-		 a{
-			font-size: 0.85em;
-			line-height: 1.4em;
-			font-weight: 300;
-			word-spacing: 0.05em;
-			letter-spacing: 0.10em;
-			text-transform: uppercase;
-			color: #333;
-			border-bottom: 1px solid #fff;
-			&.active {
-				color: $blue;
-			}
-		}
-	}
-}
-
 section#actions-column {
   display: none;
 }
@@ -1216,7 +1216,7 @@ h2.programme {
   line-height: 1em;
   margin: 30px 0 25px 0;
   padding-bottom: 20px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid $grey;
   &:first-of-type {
     margin-top: 50px;
   }
@@ -1448,14 +1448,15 @@ iframe#map {
 
 div.message {
   position: absolute;
-  top: 750px;
+  top: 760px;
   right: 285px;
   width: 20%;
   background: $grey;
-  padding: 15px;
+  padding: 10px;
   p {
-    font-weight: 0.75em;
+    font-weight: 0.85em;
     margin-bottom: 0;
+    color: $red
   }
   &:before {
     position: absolute;
@@ -1467,11 +1468,44 @@ div.message {
     height:0;
     width:0;
     position:absolute;
-    bottom: 75px;
+    bottom: 72px;
     left: -8px;
     -webkit-transform: rotate(45deg);
     -moz-transform:    rotate(45deg);
     -ms-transform:     rotate(45deg);
     -o-transform:      rotate(45deg);
   }
+}
+
+div.container.status {
+  width: 100%;
+  margin: 0;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  p {
+    margin-bottom: 0;
+    color: #fff;
+    margin: 10px 0;
+  }
+  i.icon-chevron-up {
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+  }
+  &#ok {
+    background: $green;
+  }
+  &#warning {
+    background: $yellow;
+  }
+  &#error {
+    background: $red;
+  }
+  display: none;
 }
