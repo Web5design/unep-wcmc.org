@@ -2,8 +2,10 @@
 
 $blue: #4c9cda;
 $dark_blue: #4295d5;
+$blue_news: #5175a3;
 $grey: #ddd;
 $light_grey: #f7f7f7;
+$dark_grey: #333;
 $grey_text: #5e5a5c;
 $green: #CCE283;
 $red: #EC8486;
@@ -87,7 +89,7 @@ h3{
     word-spacing: 0.07em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #5175a3;
+    color: $blue_news;
 	}
 	&#position {
 	  font-size: 1em;
@@ -818,36 +820,6 @@ ul#fields, ul#content, ul#fields-small, ul#content-small, ul#programmes {
 		}
 		&.active, &:hover {
 			padding-left: 3%;
-      &#programme_1 {
-        border-left: 5px solid #59B200;
-      }
-      &#programme_2 {
-        border-left: 5px solid #FFC926;
-      }
-      &#programme_3 {
-        border-left: 5px solid #0085B2;
-      }
-      &#programme_4 {
-        border-left: 5px solid #FF9326;
-      }
-      &#programme_5 {
-        border-left: 5px solid #D42B29;
-      }
-      &#programme_6 {
-        border-left: 5px solid #8C008C;
-      }
-      &#programme_7 {
-        border-left: 5px solid #8C4600;
-      }
-      &#programme_8 {
-        border-left: 5px solid #38B8B9;
-      }
-      &#programme_9 {
-        border-left: 5px solid #9EC23B;
-      }
-      &#programme_10 {
-        border-left: 5px solid #FF7A4D;
-      }
       &.content_type {
         border-left: 5px solid $blue;
       }
@@ -863,7 +835,7 @@ ul#fields, ul#content, ul#fields-small, ul#content-small, ul#programmes {
 			border-radius: 5px;
 			line-height: 0.5em;
 			font-weight: 300;
-			color: #ddd;
+			color: $grey;
 			text-align: center;
 			i.icon-caret-down {
 				font-size: 1.5em;
@@ -958,7 +930,7 @@ form {
 div#footer_container {
 	width:100%;
 	position: absolute;
-	background-color: #333;
+	background-color: $dark_grey;
 	background: url('../imgs/map_world_small.png') no-repeat center;
 	background-opacity: 0.2;
 	background-size: 100%;
